@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.lenovo.wordbook">
+          package="com.example.lenovo.wordbook">
 
     <application
         android:allowBackup="true"
@@ -9,35 +9,39 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity"
+        <activity
+            android:name=".MainActivity"
             android:label="单词本">
             <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.MAIN"/>
 
-                <category android:name="android.intent.category.LAUNCHER" />
+                <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
         <activity android:name=".Main1Activity">
             <intent-filter>
-                <action android:name="com.example.wordbook.ACTION1" />
+                <action android:name="com.example.wordbook.ACTION1"/>
 
-                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.DEFAULT"/>
             </intent-filter>
         </activity>
         <activity android:name=".Main2Activity">
             <intent-filter>
-                <action android:name="com.example.wordbook.ACTION2" />
+                <action android:name="com.example.wordbook.ACTION2"/>
 
-                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.DEFAULT"/>
             </intent-filter>
-            </activity>
+        </activity>
         <activity android:name=".Main3Activity">
             <intent-filter>
-                <action android:name="com.example.wordbook.ACTION3" />
+                <action android:name="com.example.wordbook.ACTION3"/>
 
-                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.DEFAULT"/>
             </intent-filter>
-            </activity>
-    </application>
+        </activity>
+        <activity android:name=".WordContentActivity">
+        </activity>
+
+      </application>
 
 </manifest>
