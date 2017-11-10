@@ -21,7 +21,7 @@ public class CheckWord extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.checkword);
+        setContentView(R.layout.check_word);
         wordDataSQL = new WordDataSQL(this, "WordBook.db", null, 1);
         final RecyclerView wordTitleRecyclerView = (RecyclerView) findViewById(R.id.searchword_recycler);
         LinearLayoutManager layoutManager = new LinearLayoutManager(this);

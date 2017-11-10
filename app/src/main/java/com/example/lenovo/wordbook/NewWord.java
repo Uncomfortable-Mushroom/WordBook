@@ -11,7 +11,7 @@ public class NewWord extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.newword);
+        setContentView(R.layout.new_word);
         RecyclerView wordTitleRecyclerView = (RecyclerView) findViewById(R.id.newword_recycler);
         LinearLayoutManager layoutManager = new LinearLayoutManager(this);
         wordTitleRecyclerView.setLayoutManager(layoutManager);

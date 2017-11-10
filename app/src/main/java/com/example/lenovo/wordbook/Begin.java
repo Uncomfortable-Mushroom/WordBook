@@ -27,9 +27,10 @@ public class Begin extends AppCompatActivity {
         wordDataSQL = new WordDataSQL(this, "WordBook.db", null, 1);
         //wordDataSQL.clear(wordDataSQL);//清除数据库中已有的所有数据
         //数据初始化
-//            for (Word w : getWord()) {
-//                wordDataSQL.insert(wordDataSQL, w, "Word");
-//            }
+        if(wordDataSQL.isEmpty(wordDataSQL,"Word"))
+          for (Word w : getWord()) {
+                wordDataSQL.insert(wordDataSQL, w, "Word");
+            }
         RecyclerView wordTitleRecyclerView = (RecyclerView) findViewById(R.id.word_title_recycler_view);
         LinearLayoutManager layoutManager = new LinearLayoutManager(this);
         wordTitleRecyclerView.setLayoutManager(layoutManager);

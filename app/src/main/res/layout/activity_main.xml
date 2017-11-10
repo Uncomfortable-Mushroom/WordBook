@@ -60,15 +60,35 @@
             android:textSize="20dp"
             android:layout_weight="0.3"/>
     </LinearLayout>
-    <Button
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_weight="0.1"
+        android:orientation="horizontal">
+        <Button
+        android:id="@+id/internet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.5"
+
         android:background="#00000000"
         android:gravity="center"
         android:textColor="#050505"
         android:textSize="20dp"
         android:text="联网--查词、添词"/>
+        <Button
+            android:id="@+id/NEWS"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+
+            android:background="#00000000"
+            android:gravity="center"
+            android:textColor="#050505"
+            android:textSize="20dp"
+            android:text="新闻"/>
+    </LinearLayout>
+
     <TextView
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
