@@ -25,7 +25,6 @@ public class Begin extends AppCompatActivity {
 
 
         wordDataSQL = new WordDataSQL(this, "WordBook.db", null, 1);
-        //wordDataSQL.clear(wordDataSQL);//清除数据库中已有的所有数据
         //数据初始化
         if(wordDataSQL.isEmpty(wordDataSQL,"Word"))
           for (Word w : getWord()) {
